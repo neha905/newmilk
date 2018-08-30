@@ -1,31 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <head>
+        <meta charset="utf-8" />
+        <title>humanfuel</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+        <meta content="Coderthemes" name="author" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <!-- C3 charts css -->
+        <link rel="stylesheet"  href="../plugins/c3/c3.min.css"  type="text/css"  />
+
+        <!-- App css -->
+        
+
+        <script src="assets/js/modernizr.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<link href="css/style1.css" rel="stylesheet" type="text/css" />
+
+		
 </head>
 
+<body style="padding: 0;margin: 0;">
 
-<!--
-<div class="container">
+<div>
+	<img src="img/HumanFuel.png" style="width:100%;">
 
-  <div class="embed-responsive embed-responsive-16by9">
-    <iframe class="embed-responsive-item" src="http://webupdates.website/public_html/ragiantex/index.html" allowfullscreen  styele="height:100px;width:100%;"></iframe>
-  </div>
-</div>
-<div class="resp-container">
-    <iframe class="resp-iframe" src="http://webupdates.website/public_html/ragiantex/endex.html" gesture="media"  allow="encrypted-media" allowfullscreen style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:0px;left:0px;right:0px;bottom:0px" height="100%" width="100%"
-"></iframe>-->
 </div>
 
-manish tabar kfdskgkjfgkf
-gfkmgmlkfg
-fdgmlfdg
-fgnfdg
-fdgm;
+</body>
 
 </html>
+
+<script>
+$(document).ready(function () {  
+
+
+  $.ajax({ 
+                                 url: "http://codegente.com/aapp/cheackcokkies.php",
+                                type: "post",
+                                  data: "",
+                                success: function(data)
+			 {     
+                                var res = data.split(",")[0];
+                                 var sta = data.split(",")[1];
+                         
+                               if (res == 'set' && sta== 'active') { 
+				
+				 window.location.href="searchproducts.html";
+				                                        }
+
+                            else { 
+                                         window.location.href="frontlogin.html";   
+                                      }                                  
+	
+				}
+			}); 
+          });
+
+$(document).ready(function () {
+  
+                  
+
+
+    // Handler for .ready() called.
+    window.setTimeout(function () {
+        location.href = "frontlogin.html";
+    }, 20000000);
+});
+
+</script>
